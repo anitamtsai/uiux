@@ -58,7 +58,7 @@
       </div>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="#" download>📄 Download Resume</a>
+        <a class="btn btn-primary" href="Anita_Tsai_Resume_UIUX.pdf" download class="button primary">Download Full Resume (PDF)</a>
         <a class="btn btn-outline" href="https://github.com/anitamtsai" target="_blank" rel="noreferrer">GitHub ↗</a>
         <a class="btn btn-outline" href="https://tinyurl.com/anitaprojects" target="_blank" rel="noreferrer">✨ Full Portfolio ↗</a>
       </div>
@@ -433,41 +433,140 @@
         </div>
       </div>
     </section>
-
-    <!-- What I Like -->
+<!-- What I Like (Interactive 3D Flip Cards) -->
     <section>
-      <div class="section-head"><span class="dot"></span><h2>What I Like</h2></div>
+      <div class="section-head"><span class="dot"></span><h2>What I Like</h2>
+      <p> Hover over the image to see a short explanation why these are my hobbies!</p>
+      </div>
+
       <div class="grid grid-3">
-        <div class="glass-card lift like-card">
-          <div class="like-icon">☕</div>
-          <h3>Pilates (with matcha)</h3>
-          <p>Movement keeps me grounded; matcha keeps it enjoyable. I love the way my body and posture changes after my morning workouts!</p>
+        
+        <!-- Card 1: Pilates / Fitness -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <div class="flip-image-area">
+                <img src="pilates.png" alt="Pilates workout setup" />
+                <div class="flip-icon-badge">☕</div>
+              </div>
+              <div class="flip-front-content">
+                <h3>Pilates (with matcha)</h3>
+                <p>Movement keeps me grounded; matcha keeps it enjoyable.</p>
+              </div>
+            </div>
+            <div class="flip-card-back glass-card">
+              <span class="back-accent-icon">☕</span>
+              <h3>Why I Love It</h3>
+              <p>I love the way my body and posture change after my morning workouts! It sets a structured, focused baseline before diving into complex interaction design mapping sessions.</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card lift like-card">
-          <div class="like-icon">💗</div>
-          <h3>Cooking new recipes</h3>
-          <p>I treat the kitchen like a design sprint: research, prototype, taste, iterate. My best dishes come from improvisation.</p>
+
+        <!-- Card 2: Baking -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <div class="flip-image-area">
+                <img src="cake.png" alt="a cake I baked" />
+                <div class="flip-icon-badge">💗</div>
+              </div>
+              <div class="flip-front-content">
+                <h3>Baking!!</h3>
+                <p>I love the iteration that happens in the kitchen!</p>
+              </div>
+            </div>
+            <div class="flip-card-back glass-card">
+              <span class="back-accent-icon">💗</span>
+              <h3>Why I Love It</h3>
+              <p>Research, prototype, taste, iterate. My best culinary variations come from functional improvisation, matching ingredients the same way I structure interface patterns.</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card lift like-card">
-          <div class="like-icon">💬</div>
-          <h3>Listening</h3>
-          <p>To songs, to stories, to podcasts. I believe listening is a design skill — it's how you understand what people actually need.</p>
+
+        <!-- Card 3: photos -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <div class="flip-image-area">
+                <img src="photos.JPG" alt="picture of mount fuji" />
+                <div class="flip-icon-badge">💬</div>
+              </div>
+              <div class="flip-front-content">
+                <h3>Photos</h3>
+                <p>I love to take photos.</p>
+              </div>
+            </div>
+            <div class="flip-card-back glass-card">
+              <span class="back-accent-icon">💬</span>
+              <h3>Why I Love It</h3>
+              <p>I love taking photos of different scenaries as well getting taken photo of -- could you tell from me being a model? </p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card lift like-card">
-          <div class="like-icon">🎵</div>
-          <h3>Museums & exhibitions</h3>
-          <p>I study how spaces guide attention, pace emotion, and make complex ideas feel tangible. A lot of UX lessons live outside of screens.</p>
+
+        <!-- Card 4: modeling -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <div class="flip-image-area">
+                <img src="modeling.png" alt="Exhibition spatial layouts" />
+                <div class="flip-icon-badge">🎵</div>
+              </div>
+              <div class="flip-front-content">
+                <h3>Modelings</h3>
+                <p> I love modeling - building confidence from being a good community is everything!! </p>
+              </div>
+            </div>
+            <div class="flip-card-back glass-card">
+              <span class="back-accent-icon">🎵</span>
+              <h3>Why I Love It</h3>
+              <p> I used to have low self-confidence because I had severe acnes. Through modeling, I started appreciating the other features and skills that I have and learned to not dwell on some of the flaws I may have!</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card lift like-card">
-          <div class="like-icon">🧭</div>
-          <h3>Travel & observation</h3>
-          <p>Moving between places reminds me that context is everything. I notice signage, service flows, and cultural defaults everywhere I go.</p>
+
+        <!-- Card 5: Travel -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <div class="flip-image-area">
+                <img src="iceland.JPG" alt="Anita next to an ice cave in Iceland" />
+                <div class="flip-icon-badge">🧭</div>
+              </div>
+              <div class="flip-front-content">
+                <h3>Travel & observation</h3>
+                <p>Moving between global places reminds me that context is absolutely everything.</p>
+              </div>
+            </div>
+            <div class="flip-card-back glass-card">
+              <span class="back-accent-icon">🧭</span>
+              <h3>Why I Love It</h3>
+              <p>I love going to new places and trying new activities! In the photo was me after a 7 hour ice cave hike!! It was super tiring but super rewarding to see. I would love to go to Switzerland next!</p>
+            </div>
+          </div>
         </div>
-        <div class="glass-card lift like-card">
-          <div class="like-icon">🧠</div>
-          <h3>Behavioral science</h3>
-          <p>I'm fascinated by why people make the choices they do — and how thoughtful design can make those choices easier, fairer, or more meaningful.</p>
+
+        <!-- Card 6: Sitcom -->
+        <div class="flip-card reveal">
+          <div class="flip-card-inner">
+            <div class="flip-card-front glass-card">
+              <div class="flip-image-area">
+                <img src="modern_family.png" alt="Modern Family" />
+                <div class="flip-icon-badge">🧠</div>
+              </div>
+              <div class="flip-front-content">
+                <h3>Shows</h3>
+                <p>My favorite way to relax after a long day is watching a show -- specifically sitcom if it is a bad day!</p>
+              </div>
+            </div>
+            <div class="flip-card-back glass-card">
+              <span class="back-accent-icon">🧠</span>
+              <h3>My favorite shows</h3>
+              <p> I love watching sitcoms! My favorite show is split between Desperate wife and Modern Family! Fun fact: when you binge-watch a 20-minute show, you experience a character's entire arc of conflict and resolution in a compressed timeframe. This triggers a neurological reward system, providing a safe, satisfying sense of completion and life progress that can be hard to find in the real world.
+            </div>
+          </div>
         </div>
+
       </div>
     </section>
 

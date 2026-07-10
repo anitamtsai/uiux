@@ -575,3 +575,124 @@ a.chip:hover { background: color-mix(in oklab, var(--accent) 80%, black); }
 .mt-1 { margin-top: 0.5rem; }
 .mt-2 { margin-top: 1rem; }
 .mt-3 { margin-top: 1.5rem; }
+
+
+
+
+
+
+/* --- Interactive 3D Flip Card Architecture --- */
+.flip-card {
+  background-color: transparent;
+  height: 340px;
+  perspective: 1000px; /* Activates 3D depth field */
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Flips card on component hover */
+.flip-card:hover .flip-card-inner,
+.flip-card:focus-within .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Force both front and back panels to share uniform properties */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Hides reverse side graphics */
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  margin: 0 !important; /* Prevents layout shifting inside grids */
+}
+
+/* --- Front Face Styling --- */
+.flip-card-front {
+  padding: 0; /* Clear container padding to allow picture bleed */
+}
+
+.flip-image-area {
+  position: relative;
+  width: 100%;
+  height: 190px;
+  overflow: hidden;
+  background: var(--accent);
+  border-bottom: 1px solid var(--border);
+}
+
+.flip-image-area img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-icon-badge {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  background: var(--card-highlight);
+  border: 1px solid var(--card-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.flip-front-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.flip-front-content h3 {
+  font-size: 1.05rem;
+  color: var(--foreground);
+}
+
+.flip-front-content p {
+  font-size: 0.875rem;
+  color: var(--muted-fg);
+  line-height: 1.5;
+}
+
+/* --- Back Face Styling --- */
+.flip-card-back {
+  padding: 1.75rem;
+  transform: rotateY(180deg); /* Counter-rotates back text so it reads correctly */
+  justify-content: center;
+  background: linear-gradient(135deg, var(--card-highlight) 0%, rgba(253, 248, 241, 0.85) 100%);
+  border-color: rgba(200, 90, 60, 0.35);
+}
+
+.back-accent-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.flip-card-back h3 {
+  font-size: 1.1rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.flip-card-back p {
+  font-size: 0.875rem;
+  color: var(--foreground);
+  line-height: 1.6;
+}
