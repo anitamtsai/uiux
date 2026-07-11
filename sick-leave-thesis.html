@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modeling Why We Work While Sick — Anita Tsai</title>
+  <meta name="description" content="A decision-theoretic model of the sick leave decision, built by integrating the Health Belief Model into a utility framework and testing it across 4 worker personas and 3 illness types." />
+  <meta name="author" content="Anita Tsai" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@500;600;700&display=swap" />
+  <link rel="stylesheet" href="anitauiux.css" />
+  <link rel="shortcut icon" href="Headshot.png" type="image/png">
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"><span></span></div>
+
+  <header class="header">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="nav-brand">Anita Tsai</a>
+      <div class="nav-links">
+        <a class="nav-link" href="index.html">Work</a>
+        <a class="nav-link" href="index.html?page=about">About</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page" aria-label="Modeling Why We Work While Sick case study">
+
+    <a class="back-link" href="index.html#work">&larr; Back to all work</a>
+
+    <!-- Hero -->
+    <section class="glass-card big reveal">
+      <p class="case-eyebrow">Honors Thesis &middot; Behavioral Decision Modeling</p>
+      <h1 class="case-title">Modeling Why We Work While Sick</h1>
+      <p class="case-dek">A decision-theoretic model of the sick leave decision, built by integrating the Health Belief Model into a utility framework and testing it across 4 worker personas and 3 illness types.</p>
+
+      <div class="case-hero-grid">
+        <div class="case-meta-item"><h4>Role</h4><p>Thesis Author &amp; Sole Researcher</p></div>
+        <div class="case-meta-item"><h4>Tools & Methods</h4><p>Decision Theory, Utility Modeling, Health Belief Model, One-Way Sensitivity Analysis</p></div>
+        <div class="case-meta-item"><h4>Timeline</h4><p>Aug 2024 &ndash; May 2026</p></div>
+        <div class="case-meta-item"><h4>Organization</h4><p>University of Michigan &middot; Honors Cognitive Science Thesis &middot; Advised by Prof. Michael Hayashi</p></div>
+      </div>
+    </section>
+
+
+    <!-- Overview -->
+    <section class="case-section reveal">
+      <h2>Overview</h2>
+      <p class="case-body">Most sick leave research treats the decision as either purely structural (does the worker have paid leave?) or purely psychological (does the worker believe they're sick enough to stay home?). My honors thesis asked a different question: how do people actually weigh illness beliefs against real-world constraints when deciding whether to go to work sick? I built a decision-theoretic model that operationalizes the Health Belief Model as a utility function, then tested it across 12 persona-by-illness scenarios to see which factor actually drives the decision &mdash; not just which factors are correlated with it.</p>
+    </section>
+
+    <!-- Context -->
+    <section class="case-section reveal">
+      <h2>The Problem</h2>
+      <p class="case-body">Access to paid sick leave in the U.S. is fragmented by state and employer, and workers without it are more likely to work while ill, a behavior called presenteeism that drives disease transmission and worse health outcomes. But most existing research studies policy presence and aggregate outcomes, not how an individual actually integrates risk beliefs, perceived legitimacy, and cost into a single go-to-work-or-stay-home decision. Without a formal model of that decision process, it's genuinely hard to know whether education-based interventions (helping people recognize their illness is serious) or structural interventions (paid leave mandates) will actually change behavior for a given group of workers.</p>
+    </section>
+    <div class="case-image-placeholder reveal"><span><a class="btn btn-primary" href="Anita Tsai_Sick Leave Paper.pdf" download class="button primary">Download Full Thesis (PDF)</a>
+</span></div>
+    <!-- Process -->
+    <section class="case-section reveal">
+      <h2>My Process</h2>
+      <div class="process-steps">
+        <div class="process-step glass-card">
+          <div class="process-step-num">1</div>
+          <div>
+            <h3>Frame the model</h3>
+            <p>Operationalized the six Health Belief Model constructs &mdash; perceived susceptibility, severity, benefits, barriers, self-efficacy, and cues to action &mdash; as terms in an additive utility function, where a positive total utility predicts staying home and a negative value predicts continued work attendance.</p>
+          </div>
+        </div>
+        <div class="process-step glass-card">
+          <div class="process-step-num">2</div>
+          <div>
+            <h3>Design personas & scenarios</h3>
+            <p>Built 4 worker personas (young/older &times; hourly/salaried) across 3 illness contexts (mild cold, panic attack, chronic back pain) &mdash; 12 scenarios total. Assigned each construct a different functional form (linear, convex, sigmoid, or step) per persona to reflect distinct cognitive processing patterns, such as a sigmoid function for mental-health severity to model a stigma-driven "legitimacy threshold."</p>
+          </div>
+        </div>
+        <div class="process-step glass-card">
+          <div class="process-step-num">3</div>
+          <div>
+            <h3>Run scenario & sensitivity analysis</h3>
+            <p>Calculated baseline utility for all 12 persona/illness combinations, then ran a one-way sensitivity analysis, perturbing each construct by +10% to identify which belief most moved the decision, and where the model sat close enough to zero for that change to flip the predicted outcome entirely.</p>
+          </div>
+        </div>
+        <div class="process-step glass-card">
+          <div class="process-step-num">4</div>
+          <div>
+            <h3>Translate into policy implications</h3>
+            <p>Interpreted where structural reform (paid leave mandates) versus cognitive or behavioral intervention (stigma reduction, managerial validation) would actually change behavior, based on which personas sat near their decision threshold rather than which constructs looked most influential on average.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Deliverables -->
+    <section class="case-section reveal">
+      <h2>Deliverables</h2>
+      <div class="deliverable-list">
+        <div class="deliverable-item glass-card">
+          <div class="deliverable-icon">✓</div>
+          <p>A fully specified decision-theoretic utility model integrating all six Health Belief Model constructs</p>
+        </div>
+        <div class="deliverable-item glass-card">
+          <div class="deliverable-icon">✓</div>
+          <p>Scenario analysis across 4 worker personas &times; 3 illness contexts (12 total conditions)</p>
+        </div>
+        <div class="deliverable-item glass-card">
+          <div class="deliverable-icon">✓</div>
+          <p>A one-way sensitivity analysis identifying which belief constructs most influence each persona's predicted decision</p>
+        </div>
+        <div class="deliverable-item glass-card">
+          <div class="deliverable-icon">✓</div>
+          <p>A policy recommendation framework tying model outputs to specific, targetable interventions</p>
+        </div>
+        <div class="deliverable-item glass-card">
+          <div class="deliverable-icon">✓</div>
+          <p>A 36-page honors thesis defended and advised by Professor Michael Hayashi</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section reveal">
+      <h2>Key Result</h2>
+      <p class="case-body">Across every illness type tested, employment structure &mdash; not illness severity &mdash; was the strongest predictor of the model's decision. Every hourly-worker scenario predicted continued work attendance; every salaried-worker scenario predicted staying home.</p>
+      <div class="results-table-wrap">
+        <table class="results-table">
+          <thead>
+            <tr><th>Persona</th><th>Illness</th><th>Total Utility</th><th>Predicted Decision</th></tr>
+          </thead>
+          <tbody>
+            <tr class="go-work"><td>Young Hourly</td><td>Mild Cold</td><td>&minus;0.35</td><td class="decision-cell">Go to Work</td></tr>
+            <tr class="go-work"><td>Young Hourly</td><td>Panic Attack</td><td>&minus;0.36</td><td class="decision-cell">Go to Work</td></tr>
+            <tr class="go-work"><td>Young Hourly</td><td>Chronic Back Pain</td><td>&minus;0.63</td><td class="decision-cell">Go to Work</td></tr>
+            <tr class="stay-home"><td>Young Salaried</td><td>Mild Cold</td><td>2.95</td><td class="decision-cell">Stay Home</td></tr>
+            <tr class="stay-home"><td>Young Salaried</td><td>Panic Attack</td><td>3.50</td><td class="decision-cell">Stay Home</td></tr>
+            <tr class="stay-home"><td>Young Salaried</td><td>Chronic Back Pain</td><td>1.45</td><td class="decision-cell">Stay Home</td></tr>
+            <tr class="go-work"><td>Older Hourly</td><td>Mild Cold</td><td>&minus;0.16</td><td class="decision-cell">Go to Work</td></tr>
+            <tr class="go-work"><td>Older Hourly</td><td>Panic Attack</td><td>&minus;0.05</td><td class="decision-cell">Go to Work</td></tr>
+            <tr class="go-work"><td>Older Hourly</td><td>Chronic Back Pain</td><td>&minus;0.66</td><td class="decision-cell">Go to Work</td></tr>
+            <tr class="stay-home"><td>Older Salaried</td><td>Mild Cold</td><td>3.18</td><td class="decision-cell">Stay Home</td></tr>
+            <tr class="stay-home"><td>Older Salaried</td><td>Panic Attack</td><td>0.70</td><td class="decision-cell">Stay Home</td></tr>
+            <tr class="stay-home"><td>Older Salaried</td><td>Chronic Back Pain</td><td>1.87</td><td class="decision-cell">Stay Home</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="results-caption">Positive utility = predicted sick leave utilization. Negative utility = predicted continued work attendance. Every hourly persona fell below zero in all three illness contexts.</p>
+    </section>
+
+    <!-- Impact -->
+    <section class="case-section reveal">
+      <h2>Impact</h2>
+      <div class="impact-banner">
+        <div class="impact-stat">
+          <div class="impact-num">12</div>
+          <div class="impact-label">persona &times; illness scenarios modeled</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num">100%</div>
+          <div class="impact-label">of hourly-worker scenarios predicted presenteeism</div>
+        </div>
+        <div class="impact-stat">
+          <div class="impact-num">1</div>
+          <div class="impact-label">behavioral reversal found via sensitivity analysis</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="case-image-placeholder reveal"><span> <img src = samplegraph.png alt="Sample Flu Case graph">
+</span></div>
+
+    <!-- Takeaways -->
+    <section class="case-section reveal">
+      <h2>Takeaways</h2>
+      <div class="takeaway-grid">
+        <div class="takeaway-card glass-card">
+          <h3><span>📊</span> Presenteeism is often rational, not irrational</h3>
+          <p>The strongest predictor in the model wasn't illness severity &mdash; it was employment structure. That reframes "working while sick" as a constrained optimization problem, not a personal failure of judgment.</p>
+        </div>
+        <div class="takeaway-card glass-card">
+          <h3><span>🎯</span> Sensitivity analysis tells you where to intervene, not what matters most</h3>
+          <p>Most constructs were locally insensitive &mdash; a 10% change did almost nothing &mdash; except in the one case where baseline utility already sat near zero. The lesson generalizes directly to product or policy work: focus interventions where people are already on the fence, not where the average effect looks biggest.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case nav -->
+    <div class="case-nav">
+      <a class="case-nav-link" href="spot-accessibility.html"><span class="dir">&larr; Previous</span>Making a Research Lab's Website Usable for Everyone</a>
+      <a class="case-nav-link" href="index.html#work"><span class="dir">All projects</span>Back to overview</a>
+      <a class="case-nav-link" href="rise-gym-app.html"><span class="dir">Next &rarr;</span>Designing Trust Into a Gym Partner-Matching App</a>
+    </div>
+
+  </main>
+
+  <script>
+    let io;
+    function observeReveal() {
+      if (io) io.disconnect();
+      io = new IntersectionObserver((entries) => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
+      }, { threshold: 0.12 });
+      document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    }
+    observeReveal();
+  </script>
+</body>
+</html>
