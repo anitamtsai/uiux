@@ -90,11 +90,12 @@
     </section>
 
     <!-- Projects -->
-    <section>
+    <section id="work">
       <div class="section-head"><span class="dot"></span><h2>Selected Projects</h2></div>
-      <p class="section-desc">Each project follows the same arc: a problem, a behavioral insight, a strategic decision, and a measurable impact.</p>
-      <div class="grid grid-2">
+      <p class="section-desc">Each project follows the same arc: a problem, a behavioral insight, a strategic decision, and a measurable impact. Click any project for the full case study.</p>
+      <div class="grid grid-3">
 
+        <a class="project-card-link" href="rise-gym-app.html">
         <article class="glass-card lift project-card reveal">
           <div class="top">
             <div>
@@ -116,8 +117,11 @@
           <div class="tag-row">
             <span class="tag">User Research</span><span class="tag">Figma</span><span class="tag">Prototyping</span><span class="tag">Heuristic Evaluation</span>
           </div>
+          <div class="card-arrow">View full case study →</div>
         </article>
+        </a>
 
+        <a class="project-card-link" href="wemo-nexus.html">
         <article class="glass-card lift project-card reveal">
           <div class="top">
             <div>
@@ -139,31 +143,11 @@
           <div class="tag-row">
             <span class="tag">Product Management</span><span class="tag">WordPress</span><span class="tag">GTM</span><span class="tag">B2B</span>
           </div>
+          <div class="card-arrow">View full case study →</div>
         </article>
+        </a>
 
-        <article class="glass-card lift project-card reveal">
-          <div class="top">
-            <div>
-              <p class="project-tag">Content Design & Growth</p>
-              <h3>Honors LSA Content Strategy</h3>
-            </div>
-            <span class="year-pill">2024 – 2026</span>
-          </div>
-          <div class="metric-box">
-            <div class="metric-num">172%</div>
-            <div class="metric-label">newsletter CTR lift</div>
-          </div>
-          <div class="project-body">
-            <p><strong>Problem:</strong> University newsletters were underperforming and failing to drive event attendance.</p>
-            <p><strong>Insight:</strong> Students clicked when content felt timely and personal, not institutional.</p>
-            <p><strong>Decision:</strong> Redesigned content hierarchy, subject-line testing, and channel cadence around audience micro-segments.</p>
-            <p><strong>Impact:</strong> Lifted newsletter CTR by 172%, grew Instagram following 1,000+, and increased event engagement 120%.</p>
-          </div>
-          <div class="tag-row">
-            <span class="tag">Analytics</span><span class="tag">Content Design</span><span class="tag">Growth</span>
-          </div>
-        </article>
-
+        <a class="project-card-link" href="spot-accessibility.html">
         <article class="glass-card lift project-card reveal">
           <div class="top">
             <div>
@@ -185,7 +169,9 @@
           <div class="tag-row">
             <span class="tag">WCAG 2.1 AA</span><span class="tag">WAVE</span><span class="tag">aXe</span><span class="tag">Accessibility</span>
           </div>
+          <div class="card-arrow">View full case study →</div>
         </article>
+        </a>
 
       </div>
     </section>
@@ -434,7 +420,7 @@
 <!-- What I Like (Interactive 3D Flip Cards) -->
     <section>
       <div class="section-head"><span class="dot"></span><h2>What I Like</h2>
-      <p> Hover/click the image to see a short explanation why these are my hobbies!</p>
+      <p> Hover over the image to see a short explanation why these are my hobbies!</p>
       </div>
 
       <div class="grid grid-3">
@@ -663,6 +649,12 @@
       });
     }
     observeReveal();
+
+    // --- Deep link support: index.html?page=about ---
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('page') === 'about') {
+      showPage('about');
+    }
   </script>
 </body>
 </html>
