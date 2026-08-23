@@ -8,16 +8,14 @@
   <title>Anita Tsai — Strategy & UI/UX Experience Designer</title>
   <meta name="description" content="Selected work, projects, and skills from Anita Tsai, a strategy and UI/UX experience designer." />
   <meta name="author" content="Anita Tsai" />
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@500;600;700&display=swap" />
   <link rel="stylesheet" href="anitauiux.css" />
   <link rel="shortcut icon" href="Headshot.png" type="image/png">
-
 </head>
 
-
-<body>
   <!-- Background gradient blobs -->
   <div class="bg-blobs" aria-hidden="true"><span></span></div>
 
@@ -26,12 +24,13 @@
       <a href="#" class="nav-brand" data-nav="work">Anita Tsai</a>
       <div class="nav-links">
         <button class="nav-link active" data-nav="work">Work</button>
+      <a href="cases.html" class="nav-link">Archive Folders</a>
+
         <button class="nav-link" data-nav="about">About</button>
       </div>
     </nav>
   </header>
 
-  
   <!-- ============================= -->
   <!-- WORK PAGE                     -->
   <!-- ============================= -->
@@ -51,157 +50,45 @@
 
       <div class="contact-row">
         <span class="chip">📍 Pittsburgh, PA</span>
-        <a class="chip" href="mailto:anitamt@umich.edu">✉ anitamt@umich.edu</a>
-        <a class="chip" href="tel:734-395-7410">📞 734-395-7410</a>
+        <a class="chip" href="mailto:anitatsa@andrew.cmu.edu">✉ anitatsa@andrew.cmu.edu</a>
       </div>
 
       <div class="cta-row">
-        <a class="btn btn-primary" href="Anita_Tsai_Resume_UIUX.pdf" download class="button primary">Download Full Resume (PDF)</a>
+        <a class="btn btn-primary" href="Anita_Tsai_Resume.pdf" download>Download Full Resume (PDF)</a>
         <a class="btn btn-outline" href="https://github.com/anitamtsai" target="_blank" rel="noreferrer">GitHub ↗</a>
         <a class="btn btn-outline" href="https://tinyurl.com/anitaprojects" target="_blank" rel="noreferrer">✨ Full Portfolio ↗</a>
       </div>
     </section>
 
-    <!-- How I Work -->
+    <!-- How I Work
     <section>
       <div class="section-head"><span class="dot"></span><h2>How I work</h2></div>
-      <div class="grid grid-4">
-        <div class="glass-card lift process-card">
-          <div class="row"><div class="process-icon">🔍</div><span class="process-num">01</span></div>
-          <h3>Discover</h3>
-          <p>I start with behavior — interviews, analytics, and competitive scans — to find the real friction, not just the stated problem.</p>
-        </div>
-        <div class="glass-card lift process-card">
-          <div class="row"><div class="process-icon">🎯</div><span class="process-num">02</span></div>
-          <h3>Decide</h3>
-          <p>I turn research into a point of view: what to build, who it's for, and why it beats the status quo.</p>
-        </div>
-        <div class="glass-card lift process-card">
-          <div class="row"><div class="process-icon">🖱</div><span class="process-num">03</span></div>
-          <h3>Design</h3>
-          <p>From sitemaps to hi-fi prototypes, I design interfaces that feel obvious in hindsight and hold up under accessibility scrutiny.</p>
-        </div>
-        <div class="glass-card lift process-card">
-          <div class="row"><div class="process-icon">📈</div><span class="process-num">04</span></div>
-          <h3>Measure</h3>
-          <p>I close the loop with metrics — conversion, engagement, task success — so the next iteration is sharper than the last.</p>
-        </div>
+      <div class="grid grid-4" id="process-grid"></div>
+    </section> -->
+
+    <!-- Portfolio Case Studies -->
+    <section class="cases-overview">
+      <div class="cases-overview-head">
+        <p class="case-eyebrow">Portfolio</p>
+        <h2 class="cases-overview-title">Selected Files</h2>
+        <p class="cases-overview-desc">A few pulled folders — click any one to open the full case study.</p>
+      </div>
+
+      <div class="filter-row" role="group" aria-label="Filter projects by discipline" id="filter-container">
+    
+      </div>
+
+      <div class="jacket-grid" id="projects-bento">
+      </div>
+
+      <p class="filter-empty-msg" id="filter-empty-msg" style="display:none; text-align:center; color: var(--muted-fg); margin-top: 2rem; font-size: 0.9rem;">
+        No projects in this category yet — check back soon.
+      </p>
+
+      <div class="cases-overview-cta">
+        <a href="cases.html" class="btn btn-primary">Open Full Archive →</a>
       </div>
     </section>
-
-    <!-- Projects -->
-    <section id="work">
-      <div class="section-head"><span class="dot"></span><h2>Selected Projects</h2></div>
-      <p class="section-desc">Each project follows the same arc: a problem, a behavioral insight, a strategic decision, and a measurable impact. Click any project for the full case study.</p>
-      <div class="grid grid-2">
-
-        <a class="project-card-link" href="rise-gym-app.html">
-        <article class="glass-card lift project-card reveal">
-          <div class="top">
-            <div>
-              <p class="project-tag">End-to-End Product Design</p>
-              <h3>RISE Gym App</h3>
-            </div>
-            <span class="year-pill">2024</span>
-          </div>
-          <div class="metric-box">
-            <div class="metric-num">0-to-1 MVP</div>
-            <div class="metric-label">designed from user research to hi-fi prototype</div>
-          </div>
-          <div class="project-body">
-            <p><strong>Problem:</strong> Gym-goers struggle to find reliable workout partners, so motivation and consistency suffer.</p>
-            <p><strong>Insight:</strong> People don't just want a matching tool; they want accountability and safety signals before meeting a stranger.</p>
-            <p><strong>Decision:</strong> Designed a partner-matching flow with schedule sync, goal filters, and trust-building profile cues.</p>
-            <p><strong>Impact:</strong> Delivered a research-backed MVP prototype validated through user interviews and heuristic evaluation.</p>
-          </div>
-          <div class="tag-row">
-            <span class="tag">User Research</span><span class="tag">Figma</span><span class="tag">Prototyping</span><span class="tag">Heuristic Evaluation</span>
-          </div>
-          <div class="card-arrow">View full case study →</div>
-        </article>
-        </a>
-
-        <a class="project-card-link" href="wemo-nexus.html">
-        <article class="glass-card lift project-card reveal">
-          <div class="top">
-            <div>
-              <p class="project-tag">Product Strategy & Web Design</p>
-              <h3>WeMo Nexus</h3>
-            </div>
-            <span class="year-pill">2023</span>
-          </div>
-          <div class="metric-box">
-            <div class="metric-num">20%</div>
-            <div class="metric-label">demo-to-pilot conversion</div>
-          </div>
-          <div class="project-body">
-            <p><strong>Problem:</strong> WeMo's B2B scooter fleet solution needed a credible, bilingual digital presence for enterprise clients.</p>
-            <p><strong>Insight:</strong> Enterprise buyers needed to see scalability and local support, not just product specs.</p>
-            <p><strong>Decision:</strong> Built a WordPress site with clear service tiers, case-study proof points, and a Mandarin/English client journey.</p>
-            <p><strong>Impact:</strong> Managed a 250+ ICP pipeline, ran 30+ demos, and converted 20% of demos into paid pilots.</p>
-          </div>
-          <div class="tag-row">
-            <span class="tag">Product Management</span><span class="tag">WordPress</span><span class="tag">GTM</span><span class="tag">B2B</span>
-          </div>
-          <div class="card-arrow">View full case study →</div>
-        </article>
-        </a>
-
-        <a class="project-card-link" href="spot-accessibility.html">
-        <article class="glass-card lift project-card reveal">
-          <div class="top">
-            <div>
-              <p class="project-tag">Accessibility Audit</p>
-              <h3>SPOT Research Website</h3>
-            </div>
-            <span class="year-pill">2026</span>
-          </div>
-          <div class="metric-box">
-            <div class="metric-num">10+</div>
-            <div class="metric-label">WCAG violations remediated</div>
-          </div>
-          <div class="project-body">
-            <p><strong>Problem:</strong> A research lab website was excluding users with visual and motor impairments.</p>
-            <p><strong>Insight:</strong> Automated tools caught surface issues, but manual keyboard and screen-reader testing revealed the real barriers.</p>
-            <p><strong>Decision:</strong> Prioritized fixes by severity and user impact, then delivered a remediation roadmap the team could execute.</p>
-            <p><strong>Impact:</strong> Surfaced and resolved 10+ WCAG 2.1 AA violations using WAVE, aXe, and manual assistive-technology checks.</p>
-          </div>
-          <div class="tag-row">
-            <span class="tag">WCAG 2.1 AA</span><span class="tag">WAVE</span><span class="tag">aXe</span><span class="tag">Accessibility</span>
-          </div>
-          <div class="card-arrow">View full case study →</div>
-        </article>
-        </a>
-
-        <a class="project-card-link" href="sick-leave-thesis.html">
-        <article class="glass-card lift project-card reveal">
-          <div class="top">
-            <div>
-              <p class="project-tag">Honors Thesis · Behavioral Modeling</p>
-              <h3>Modeling Why We Work While Sick</h3>
-            </div>
-            <span class="year-pill">2024 – 2026</span>
-          </div>
-          <div class="metric-box">
-            <div class="metric-num">12</div>
-            <div class="metric-label">persona × illness scenarios modeled</div>
-          </div>
-          <div class="project-body">
-            <p><strong>Problem:</strong> Existing research studies sick leave policy outcomes, but not how individuals actually weigh illness beliefs against real-world constraints.</p>
-            <p><strong>Insight:</strong> Employment structure, not illness severity, was the strongest predictor of the model's decision.</p>
-            <p><strong>Decision:</strong> Built a decision-theoretic utility model integrating the Health Belief Model, then ran scenario and sensitivity analysis.</p>
-            <p><strong>Impact:</strong> Found 100% of hourly-worker scenarios predicted presenteeism, and identified where targeted interventions could flip the outcome.</p>
-          </div>
-          <div class="tag-row">
-            <span class="tag">Decision Theory</span><span class="tag">Utility Modeling</span><span class="tag">Sensitivity Analysis</span>
-          </div>
-          <div class="card-arrow">View full case study →</div>
-        </article>
-        </a>
-
-      </div>
-    </section>
-
     <!-- Experience -->
     <section>
       <div class="section-head"><span class="dot"></span><h2>Experience</h2></div>
@@ -387,7 +274,7 @@
   <!-- ============================= -->
   <main id="page-about" class="page" aria-label="About" hidden>
 
-    <!-- Interactive intro -->
+    <!-- Interactive Intro -->
     <section class="glass-card big">
       <p class="hero-tag" style="color: var(--muted-fg); letter-spacing: 0.15em;">About</p>
       <h1 class="hero-title" style="font-size: clamp(1.75rem, 4vw, 3rem);">
@@ -407,10 +294,8 @@
       <p class="hint">Hover or tap each phrase to see how I think about it.</p>
     </section>
 
-    
     <!-- Background + Who -->
     <section class="about-grid">
-      <!-- <img class="photo" src="./Headshot.png" alt="Headshot of Anita Tsai." /> -->
       <img class="glass-card about-card reveal" src="./Headshot.png" alt="Headshot of Anita Tsai." />
 
       <div class="glass-card about-card reveal">
@@ -421,8 +306,6 @@
       </div>
     </section>
 
-
-     
     <!-- Why -->
     <section>
       <div class="glass-card big reveal">
@@ -443,245 +326,35 @@
         </div>
       </div>
     </section>
-<!-- What I Like (Interactive 3D Flip Cards) -->
+
+    <!-- What I Like (3D Flip Cards) -->
     <section>
-      <div class="section-head"><span class="dot"></span><h2>What I Like</h2>
-      <p> Hover over the image to see a short explanation why these are my hobbies!</p>
+      <div class="section-head">
+        <span class="dot"></span>
+        <h2>What I Like</h2>
       </div>
+      <p class="section-desc">Hover over the image to see a short explanation why these are my hobbies!</p>
 
-      <div class="grid grid-3">
-        
-        <!-- Card 1: Pilates / Fitness -->
-        <div class="flip-card reveal">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glass-card">
-              <div class="flip-image-area">
-                <img src="pilates.png" alt="Pilates workout setup" />
-                <div class="flip-icon-badge">☕</div>
-              </div>
-              <div class="flip-front-content">
-                <h3>Pilates (with matcha)</h3>
-                <p>Movement keeps me grounded; matcha keeps it enjoyable.</p>
-              </div>
-            </div>
-            <div class="flip-card-back glass-card">
-              <span class="back-accent-icon">☕</span>
-              <h3>Why I Love It</h3>
-              <p>I love the way my body and posture change after my morning workouts! It sets a structured, focused baseline before diving into complex interaction design mapping sessions.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 2: Baking -->
-        <div class="flip-card reveal">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glass-card">
-              <div class="flip-image-area">
-                <img src="cake.png" alt="a cake I baked" />
-                <div class="flip-icon-badge">💗</div>
-              </div>
-              <div class="flip-front-content">
-                <h3>Baking!!</h3>
-                <p>I love the iteration that happens in the kitchen!</p>
-              </div>
-            </div>
-            <div class="flip-card-back glass-card">
-              <span class="back-accent-icon">💗</span>
-              <h3>Why I Love It</h3>
-              <p>Research, prototype, taste, iterate. My best culinary variations come from functional improvisation, matching ingredients the same way I structure interface patterns.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 3: photos -->
-        <div class="flip-card reveal">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glass-card">
-              <div class="flip-image-area">
-                <img src="photos.JPG" alt="picture of mount fuji" />
-                <div class="flip-icon-badge">💬</div>
-              </div>
-              <div class="flip-front-content">
-                <h3>Photos</h3>
-                <p>I love to take photos.</p>
-              </div>
-            </div>
-            <div class="flip-card-back glass-card">
-              <span class="back-accent-icon">💬</span>
-              <h3>Why I Love It</h3>
-              <p>I love taking photos of different scenaries as well getting taken photo of -- could you tell from me being a model? </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 4: modeling -->
-        <div class="flip-card reveal">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glass-card">
-              <div class="flip-image-area">
-                <img src="modeling.png" alt="Exhibition spatial layouts" />
-                <div class="flip-icon-badge">🎵</div>
-              </div>
-              <div class="flip-front-content">
-                <h3>Modelings</h3>
-                <p> I love modeling - building confidence from being a good community is everything!! </p>
-              </div>
-            </div>
-            <div class="flip-card-back glass-card">
-              <span class="back-accent-icon">🎵</span>
-              <h3>Why I Love It</h3>
-              <p> I used to have low self-confidence because I had severe acnes. Through modeling, I started appreciating the other features and skills that I have and learned to not dwell on some of the flaws I may have!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5: Travel -->
-        <div class="flip-card reveal">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glass-card">
-              <div class="flip-image-area">
-                <img src="iceland.JPG" alt="Anita next to an ice cave in Iceland" />
-                <div class="flip-icon-badge">🧭</div>
-              </div>
-              <div class="flip-front-content">
-                <h3>Travel & observation</h3>
-                <p>Moving between global places reminds me that context is absolutely everything.</p>
-              </div>
-            </div>
-            <div class="flip-card-back glass-card">
-              <span class="back-accent-icon">🧭</span>
-              <h3>Why I Love It</h3>
-              <p>I love going to new places and trying new activities! In the photo was me after a 7 hour ice cave hike!! It was super tiring but super rewarding to see. I would love to go to Switzerland next!</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6: Sitcom -->
-        <div class="flip-card reveal">
-          <div class="flip-card-inner">
-            <div class="flip-card-front glass-card">
-              <div class="flip-image-area">
-                <img src="modern_family.png" alt="Modern Family" />
-                <div class="flip-icon-badge">🧠</div>
-              </div>
-              <div class="flip-front-content">
-                <h3>Shows</h3>
-                <p>My favorite way to relax after a long day is watching a show -- specifically sitcom if it is a bad day!</p>
-              </div>
-            </div>
-            <div class="flip-card-back glass-card">
-              <span class="back-accent-icon">🧠</span>
-              <h3>My favorite shows</h3>
-              <p> I love watching sitcoms! My favorite show is split between Desperate wife and Modern Family! Fun fact: when you binge-watch a 20-minute show, you experience a character's entire arc of conflict and resolution in a compressed timeframe. This triggers a neurological reward system, providing a safe, satisfying sense of completion and life progress that can be hard to find in the real world.
-            </div>
-          </div>
-        </div>
-
+      <div class="grid grid-3" id="likes-grid">
+        <!-- Rendered dynamically -->
       </div>
     </section>
 
-    <!-- Quote -->
-
-     <section id="contact">
-      
-    </section>
-    <section>
+    <!-- Contact Block -->
+    <section id="contact">
       <div class="glass-card quote">
-       <h1>Contact</h1>
-      <a class="btn btn-primary" href="mailto:anitatsa@andrew.cmu.edu">email me</a>
-
-      <a class="btn btn-primary"href="https://www.linkedin.com/in/anitamariannetsai/" target="_blank" > linkedin </a>
-        
-      <a class="btn btn-primary"href="https://github.com/anitamtsai" target="_blank" > github </a>
+        <h1>Contact</h1>
+        <div class="cta-row" style="justify-content: center; margin-top: 1rem;">
+          <a class="btn btn-primary" href="mailto:anitatsa@andrew.cmu.edu">Email me</a>
+          <a class="btn btn-primary" href="https://www.linkedin.com/in/anitamariannetsai/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="btn btn-primary" href="https://github.com/anitamtsai" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Small script: page nav + phrase-chip interaction + scroll reveal -->
-  <script>
-    // --- Page switcher (Work / About) ---
-    const pages = {
-      work:  document.getElementById('page-work'),
-      about: document.getElementById('page-about'),
-    };
-    const navBtns = document.querySelectorAll('[data-nav]');
-    function showPage(name) {
-      Object.entries(pages).forEach(([k, el]) => { el.hidden = (k !== name); });
-      document.querySelectorAll('.nav-link').forEach(btn => {
-        btn.classList.toggle('active', btn.dataset.nav === name);
-      });
-      window.scrollTo({ top: 0, behavior: 'instant' in window ? 'instant' : 'auto' });
-      observeReveal();
-    }
-    navBtns.forEach(btn => btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      showPage(btn.dataset.nav);
-    }));
-
-    // --- About: phrase chip interactive detail ---
-    const phrases = {
-      feel: {
-        color: 'var(--coral)', icon: '💗', label: 'What people feel',
-        body: "Emotion drives behavior long before logic does. I lean on interviews, ethnography, and behavioral research to understand the messy human side — what people trust, what frustrates them, what they'll actually do (not just what they say)."
-      },
-      systems: {
-        color: 'var(--sage)', icon: '🧭', label: 'What systems allow',
-        body: "Great design respects constraints — technical, organizational, cultural. I work closely with engineers, PMs, and stakeholders to design solutions that ship, scale, and hold up in the real world."
-      },
-      business: {
-        color: '#5b6bd6', icon: '🧠', label: 'What business needs',
-        body: "Design without strategy is decoration. I anchor every project in a business point of view — market signals, competitive positioning, and metrics that matter — so craft translates into outcomes."
-      }
-    };
-    const chips = document.querySelectorAll('.phrase-chip');
-    const panel = document.getElementById('detail-panel');
-    const iconEl = document.getElementById('detail-icon');
-    const labelEl = document.getElementById('detail-label');
-    const bodyEl = document.getElementById('detail-body');
-
-    function activatePhrase(key) {
-      const p = phrases[key]; if (!p) return;
-      chips.forEach(c => {
-        const active = c.dataset.phrase === key;
-        c.dataset.active = active;
-        c.style.setProperty('--phrase-color', phrases[c.dataset.phrase].color);
-      });
-      iconEl.textContent = p.icon;
-      iconEl.style.background = `color-mix(in oklab, ${p.color} 18%, transparent)`;
-      iconEl.style.color = p.color;
-      labelEl.textContent = p.label;
-      labelEl.style.color = p.color;
-      bodyEl.textContent = p.body;
-      panel.style.borderColor = `color-mix(in oklab, ${p.color} 40%, var(--border))`;
-      panel.style.animation = 'none'; panel.offsetHeight; panel.style.animation = '';
-    }
-    chips.forEach(chip => {
-      chip.style.setProperty('--phrase-color', phrases[chip.dataset.phrase].color);
-      ['mouseenter', 'focus', 'click'].forEach(ev =>
-        chip.addEventListener(ev, () => activatePhrase(chip.dataset.phrase))
-      );
-    });
-
-    // --- Reveal on scroll ---
-    let io;
-    function observeReveal() {
-      if (io) io.disconnect();
-      io = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); } });
-      }, { threshold: 0.15 });
-      document.querySelectorAll('.reveal').forEach(el => {
-        if (!el.closest('[hidden]')) io.observe(el);
-      });
-    }
-    observeReveal();
-
-    // --- Deep link support: index.html?page=about ---
-    const params = new URLSearchParams(window.location.search);
-    if (params.get('page') === 'about') {
-      showPage('about');
-    }
-  </script>
+  <script src="app.js"></script>
 </body>
 </html>
 

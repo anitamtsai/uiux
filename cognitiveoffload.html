@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognitive Offload - Case Study</title>
+  <link rel="stylesheet" href="anitauiux.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Navigation -->
+    <nav>
+      <a class="back-link" href="index.html">&larr; Back to all work</a>
+
+      <div class="case-study-label">Case Study</div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="project-meta">
+        <span>2026</span>
+        <span>Product Design &amp; Strategy</span>
+        <span>AI/UX/Research</span>
+      </div>
+      <h1>Cognitive Offload</h1>
+      <p class="intro-text">
+        An AI-powered external executive function system that eliminates cognitive burden by capturing messy thoughts with zero friction and organizing them automatically. Rather than adding another productivity tool, Cognitive Offload reimagines how knowledge workers manage mental energy and attention throughout their day.
+      </p>
+    </section>
+
+    <!-- Problem Section -->
+    <section>
+      <h2>The Problem: Cognitive Overload Crisis</h2>
+      <p>
+        Knowledge workers today face an impossible paradox: they use an average of 9.4 different tools daily, yet 72% report feeling cognitively overwhelmed. The problem isn't a lack of tools—it's that every thought creates a decision point.
+      </p>
+
+      <div class="diagram-block">
+        <div class="diagram-title">The Choice Every Thought Forces</div>
+        <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMid meet">
+          <!-- Thought bubble -->
+          <circle cx="600" cy="40" r="30" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+          <text x="600" y="48" font-size="24" text-anchor="middle">💭</text>
+          <text x="600" y="90" font-size="15" font-weight="600" text-anchor="middle" fill="#1a1a1a">A thought emerges</text>
+
+          <!-- Arrow down -->
+          <line x1="600" y1="102" x2="600" y2="135" stroke="#999" stroke-width="2"/>
+          <polygon points="600,140 594,128 606,128" fill="#999"/>
+
+          <!-- Path 1: Try to remember -->
+          <g>
+            <rect x="50" y="155" width="320" height="115" rx="8" fill="#fef2f2" stroke="#dc2626" stroke-width="2"/>
+            <circle cx="100" cy="190" r="22" fill="#fecaca" stroke="#dc2626" stroke-width="2"/>
+            <text x="100" y="197" font-size="18" text-anchor="middle" fill="#991b1b" font-weight="700">1</text>
+            <text x="140" y="188" font-size="15" font-weight="700" fill="#7f1d1d">Try to Remember</text>
+            <text x="140" y="210" font-size="13" fill="#9f1239">• Anxiety builds</text>
+            <text x="140" y="228" font-size="13" fill="#9f1239">• Mental load increases</text>
+            <text x="140" y="246" font-size="13" fill="#9f1239">• Brain stores pending items</text>
+          </g>
+
+          <!-- Path 2: Capture in app -->
+          <g>
+            <rect x="440" y="155" width="320" height="115" rx="8" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+            <circle cx="490" cy="190" r="22" fill="#fde68a" stroke="#f59e0b" stroke-width="2"/>
+            <text x="490" y="197" font-size="18" text-anchor="middle" fill="#92400e" font-weight="700">2</text>
+            <text x="530" y="188" font-size="15" font-weight="700" fill="#92400e">Capture in App</text>
+            <text x="530" y="210" font-size="13" fill="#b45309">• Forced decisions</text>
+            <text x="530" y="228" font-size="13" fill="#b45309">• Folder? Priority? Date?</text>
+            <text x="530" y="246" font-size="13" fill="#b45309">• Organizational overhead</text>
+          </g>
+
+          <!-- Path 3: Cognitive Offload -->
+          <g>
+            <rect x="830" y="155" width="320" height="115" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+            <circle cx="880" cy="190" r="22" fill="#bbf7d0" stroke="#16a34a" stroke-width="2"/>
+            <text x="880" y="197" font-size="18" text-anchor="middle" fill="#15803d" font-weight="700">3</text>
+            <text x="920" y="188" font-size="15" font-weight="700" fill="#15803d">Cognitive Offload</text>
+            <text x="920" y="210" font-size="13" fill="#166534">• Dump raw thought</text>
+            <text x="920" y="228" font-size="13" fill="#166534">• Zero decisions needed</text>
+            <text x="920" y="246" font-size="13" fill="#166534">• Return to work instantly</text>
+          </g>
+        </svg>
+      </div>
+
+      <h3>Why Current Solutions Fail</h3>
+      <div class="grid-2">
+        <div class="card problem">
+          <h4>Capture Friction</h4>
+          <p>Task managers require upfront categorization at capture time. Users must decide folder, priority, and deadline before the system helps—consuming cognitive energy on organization instead of work.</p>
+        </div>
+        <div class="card problem">
+          <h4>Manual Organization</h4>
+          <p>Users do the sorting work. What should be automated is delegated to the human. This ongoing maintenance burden keeps growing with every new task.</p>
+        </div>
+        <div class="card problem">
+          <h4>Ignores Mental State</h4>
+          <p>All apps show identical interface all day. Yet cognitive capacity varies 40-60% throughout the day. Morning energy ≠ post-meeting energy ≠ evening reflection state.</p>
+        </div>
+        <div class="card problem">
+          <h4>Context Loss</h4>
+          <p>Tasks captured weeks ago lose meaning. "Why does this matter?" becomes a 5-10 minute manual reconstruction effort instead of instant clarity.</p>
+        </div>
+      </div>
+
+      <blockquote>
+        "I have so many apps to organize my life, but organizing them has become my job. I just want somewhere to dump thoughts and have them handled."
+        <div class="quote-source">— Sarah, Project Manager (22 interviews conducted)</div>
+      </blockquote>
+    </section>
+
+    <!-- Research Section -->
+    <section>
+      <h2>Research: Understanding Cognitive Load</h2>
+      <p>
+        We conducted 22 interviews with knowledge workers (product managers, engineers, founders, strategists) and reviewed cognitive science literature on distributed cognition and attention residue. The data revealed four critical patterns that informed our design:
+      </p>
+
+      <div class="diagram-block">
+        <div class="diagram-title">Key Research Findings</div>
+        <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid meet">
+          <!-- Finding 1 -->
+          <g>
+            <rect x="20" y="20" width="270" height="230" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="60" cy="55" r="20" fill="#2563eb"/>
+            <text x="60" y="62" font-size="16" text-anchor="middle" fill="white" font-weight="700">1</text>
+            <text x="95" y="60" font-size="14" font-weight="700" fill="#0c4a6e">Memory is Timeline-Based</text>
+            <text x="35" y="95" font-size="12" fill="#4a5568">Recalls by timing ("Tuesday")</text>
+            <text x="35" y="115" font-size="12" fill="#4a5568">not categories ("Folder").</text>
+            <line x1="35" y1="135" x2="270" y2="135" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="35" y="160" font-size="12" fill="#0c4a6e" font-weight="700">Impact:</text>
+            <text x="35" y="180" font-size="12" fill="#4a5568">Category mapping adds</text>
+            <text x="35" y="198" font-size="12" fill="#4a5568">extra cognitive friction.</text>
+          </g>
+
+          <!-- Finding 2 -->
+          <g>
+            <rect x="310" y="20" width="270" height="230" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="350" cy="55" r="20" fill="#2563eb"/>
+            <text x="350" y="62" font-size="16" text-anchor="middle" fill="white" font-weight="700">2</text>
+            <text x="385" y="60" font-size="14" font-weight="700" fill="#0c4a6e">Energy Varies 40-60%</text>
+            <text x="325" y="95" font-size="12" fill="#4a5568">Peak morning energy vs</text>
+            <text x="325" y="115" font-size="12" fill="#4a5568">post-meeting fatigue.</text>
+            <line x1="325" y1="135" x2="560" y2="135" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="325" y="160" font-size="12" fill="#0c4a6e" font-weight="700">Impact:</text>
+            <text x="325" y="180" font-size="12" fill="#4a5568">Static UIs cause overcommit</text>
+            <text x="325" y="198" font-size="12" fill="#4a5568">or underutilization.</text>
+          </g>
+
+          <!-- Finding 3 -->
+          <g>
+            <rect x="600" y="20" width="270" height="230" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="640" cy="55" r="20" fill="#2563eb"/>
+            <text x="640" y="62" font-size="16" text-anchor="middle" fill="white" font-weight="700">3</text>
+            <text x="675" y="60" font-size="14" font-weight="700" fill="#0c4a6e">Ideas Come in Bursts</text>
+            <text x="615" y="95" font-size="12" fill="#4a5568">30-50 ideas per week.</text>
+            <text x="615" y="115" font-size="12" fill="#4a5568">High volume, few decisions.</text>
+            <line x1="615" y1="135" x2="850" y2="135" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="615" y="160" font-size="12" fill="#0c4a6e" font-weight="700">Impact:</text>
+            <text x="615" y="180" font-size="12" fill="#4a5568">Need quick capture</text>
+            <text x="615" y="198" font-size="12" fill="#4a5568">without commitment.</text>
+          </g>
+
+          <!-- Finding 4 -->
+          <g>
+            <rect x="890" y="20" width="290" height="230" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="930" cy="55" r="20" fill="#2563eb"/>
+            <text x="930" y="62" font-size="16" text-anchor="middle" fill="white" font-weight="700">4</text>
+            <text x="965" y="60" font-size="14" font-weight="700" fill="#0c4a6e">Context Recovery is Costly</text>
+            <text x="905" y="95" font-size="12" fill="#4a5568">5-10 min spent reconstructing</text>
+            <text x="905" y="115" font-size="12" fill="#4a5568">meaning after weeks away.</text>
+            <line x1="905" y1="135" x2="1160" y2="135" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="905" y="160" font-size="12" fill="#0c4a6e" font-weight="700">Impact:</text>
+            <text x="905" y="180" font-size="12" fill="#4a5568">30-40% higher completion</text>
+            <text x="905" y="198" font-size="12" fill="#4a5568">if context is auto-surfaced.</text>
+          </g>
+
+          <!-- Market Gap -->
+          <g>
+            <rect x="20" y="280" width="1160" height="200" rx="12" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+            <text x="600" y="320" font-size="16" font-weight="700" text-anchor="middle" fill="#92400e">The Market Gap</text>
+            <text x="600" y="348" font-size="14" text-anchor="middle" fill="#4a5568">Every productivity app solves one piece. None solve the core problem:</text>
+            
+            <rect x="60" y="370" width="1080" height="85" rx="8" fill="white" stroke="#f59e0b" stroke-width="1.5"/>
+            <text x="600" y="400" font-size="16" font-weight="700" text-anchor="middle" fill="#b45309">Automating Organizational Work Entirely</text>
+            <text x="600" y="425" font-size="14" text-anchor="middle" fill="#b45309">Capture + Automatic Organization + Intelligent Surfacing</text>
+          </g>
+        </svg>
+      </div>
+
+      <h3>Market Metrics That Validate the Problem</h3>
+      <div class="grid-4">
+        <div class="metric-card">
+          <div class="metric-value">72%</div>
+          <div class="metric-label">Cognitively Overwhelmed</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">40%↑</div>
+          <div class="metric-label">ADHD Increase (5 yrs)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">9.4</div>
+          <div class="metric-label">Avg Tools Used Daily</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">22 min</div>
+          <div class="metric-label">Avg Focus Span (down from 45)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Philosophy -->
+    <section>
+      <h2>Design Philosophy: Never Create More Load</h2>
+      <blockquote>
+        The AI should never create more cognitive load than it removes. Every feature, every suggestion, every interaction must reduce mental burden.
+      </blockquote>
+      <p>
+        This principle cascaded into six core design rules that guided every decision:
+      </p>
+
+      <div class="diagram-block">
+        <div class="diagram-title">Six Core Design Principles</div>
+        <svg viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid meet">
+          <!-- Row 1 -->
+          <!-- Principle 1 -->
+          <g>
+            <rect x="20" y="20" width="360" height="300" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="65" cy="65" r="25" fill="#2563eb"/>
+            <text x="65" y="73" font-size="20" text-anchor="middle" fill="white">🎤</text>
+            <text x="105" y="70" font-size="15" font-weight="700" fill="#0c4a6e">1. Zero Capture Friction</text>
+            <text x="40" y="115" font-size="13" fill="#4a5568">Voice, text, or paste. No folders or dates.</text>
+            <line x1="40" y1="140" x2="360" y2="140" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="40" y="170" font-size="12" fill="#4a5568">Users spend &lt;2s capturing and return to work.</text>
+            <rect x="40" y="240" width="320" height="40" rx="6" fill="#e0f2fe"/>
+            <text x="200" y="265" font-size="12" font-weight="700" text-anchor="middle" fill="#0c4a6e">Impact: 40% faster than typing</text>
+          </g>
+
+          <!-- Principle 2 -->
+          <g>
+            <rect x="420" y="20" width="360" height="300" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="465" cy="65" r="25" fill="#2563eb"/>
+            <text x="465" y="73" font-size="20" text-anchor="middle" fill="white">🧠</text>
+            <text x="505" y="70" font-size="15" font-weight="700" fill="#0c4a6e">2. Organize Retroactively</text>
+            <text x="440" y="115" font-size="13" fill="#4a5568">AI sorts silently after capture using context.</text>
+            <line x1="440" y1="140" x2="760" y2="140" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="440" y="170" font-size="12" fill="#4a5568">Extracts action items and links related ideas.</text>
+            <rect x="440" y="240" width="320" height="40" rx="6" fill="#e0f2fe"/>
+            <text x="600" y="265" font-size="12" font-weight="700" text-anchor="middle" fill="#0c4a6e">Impact: &gt;90% extraction accuracy</text>
+          </g>
+
+          <!-- Principle 3 -->
+          <g>
+            <rect x="820" y="20" width="360" height="300" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="865" cy="65" r="25" fill="#2563eb"/>
+            <text x="865" y="73" font-size="20" text-anchor="middle" fill="white">⚡</text>
+            <text x="905" y="70" font-size="15" font-weight="700" fill="#0c4a6e">3. Group by Effort</text>
+            <text x="840" y="115" font-size="13" fill="#4a5568">Group by cognitive effort required.</text>
+            <line x1="840" y1="140" x2="1160" y2="140" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="840" y="170" font-size="12" fill="#4a5568">Deep work separated from administrative tasks.</text>
+            <rect x="840" y="240" width="320" height="40" rx="6" fill="#e0f2fe"/>
+            <text x="1000" y="265" font-size="12" font-weight="700" text-anchor="middle" fill="#0c4a6e">Impact: 35% better completion</text>
+          </g>
+
+          <!-- Row 2 -->
+          <!-- Principle 4 -->
+          <g>
+            <rect x="20" y="360" width="360" height="300" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="65" cy="405" r="25" fill="#2563eb"/>
+            <text x="65" y="413" font-size="20" text-anchor="middle" fill="white">🔗</text>
+            <text x="105" y="410" font-size="15" font-weight="700" fill="#0c4a6e">4. Context Recovery</text>
+            <text x="40" y="455" font-size="13" fill="#4a5568">Automatically surface emails &amp; docs.</text>
+            <line x1="40" y1="480" x2="360" y2="480" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="40" y="510" font-size="12" fill="#4a5568">No searching or manual reconstruction.</text>
+            <rect x="40" y="580" width="320" height="40" rx="6" fill="#e0f2fe"/>
+            <text x="200" y="605" font-size="12" font-weight="700" text-anchor="middle" fill="#0c4a6e">Impact: 5-10 min saved per task</text>
+          </g>
+
+          <!-- Principle 5 -->
+          <g>
+            <rect x="420" y="360" width="360" height="300" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="465" cy="405" r="25" fill="#2563eb"/>
+            <text x="465" y="413" font-size="20" text-anchor="middle" fill="white">🎯</text>
+            <text x="505" y="410" font-size="15" font-weight="700" fill="#0c4a6e">5. Opportunity Surfacing</text>
+            <text x="440" y="455" font-size="13" fill="#4a5568">Show tasks when conditions align.</text>
+            <line x1="440" y1="480" x2="760" y2="480" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="440" y="510" font-size="12" fill="#4a5568">Match current time, context, and capacity.</text>
+            <rect x="440" y="580" width="320" height="40" rx="6" fill="#e0f2fe"/>
+            <text x="600" y="605" font-size="12" font-weight="700" text-anchor="middle" fill="#0c4a6e">Impact: Dramatic completion boost</text>
+          </g>
+
+          <!-- Principle 6 -->
+          <g>
+            <rect x="820" y="360" width="360" height="300" rx="12" fill="#f0f9ff" stroke="#2563eb" stroke-width="2"/>
+            <circle cx="865" cy="405" r="25" fill="#2563eb"/>
+            <text x="865" y="413" font-size="20" text-anchor="middle" fill="white">✓</text>
+            <text x="905" y="410" font-size="15" font-weight="700" fill="#0c4a6e">6. Confidence Gating</text>
+            <text x="840" y="455" font-size="13" fill="#4a5568">Surface items only if 85%+ confident.</text>
+            <line x1="840" y1="480" x2="1160" y2="480" stroke="#e5e5e5" stroke-width="1"/>
+            <text x="840" y="510" font-size="12" fill="#4a5568">Restraint builds system trust over time.</text>
+            <rect x="840" y="580" width="320" height="40" rx="6" fill="#e0f2fe"/>
+            <text x="1000" y="605" font-size="12" font-weight="700" text-anchor="middle" fill="#0c4a6e">Impact: 70%+ recommendation trust</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section>
+      <h2>The Solution: Three Core Views</h2>
+      <p>
+        Three interconnected interfaces solve the cognitive load problem at different moments of the workflow. Each view serves a distinct need while working together as a cohesive system.
+      </p>
+
+      <!-- Feature 1 -->
+      <div class="feature-showcase">
+        <div class="feature-visual">
+          <svg viewBox="0 0 360 550" preserveAspectRatio="xMidYMid meet">
+            <rect x="10" y="10" width="340" height="530" rx="32" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+            <text x="40" y="50" font-size="12" fill="#1a1a1a" font-weight="600">9:41</text>
+            
+            <text x="40" y="90" font-size="18" fill="#1a1a1a" font-weight="300">Here's your focus</text>
+            <text x="40" y="110" font-size="11" fill="#718096">⚡ Peak energy (morning)</text>
+            
+            <text x="40" y="155" font-size="11" fill="#718096" font-weight="700">DEEP WORK (1-2 HRS)</text>
+            <rect x="35" y="165" width="290" height="60" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+            <text x="50" y="190" font-size="13" fill="#1a1a1a" font-weight="600">Design Q4 roadmap</text>
+            <text x="50" y="210" font-size="11" fill="#718096">Stakeholder prep • ~75 min</text>
+            
+            <text x="40" y="260" font-size="11" fill="#718096" font-weight="700">ADMIN (30 MIN)</text>
+            <rect x="35" y="270" width="290" height="60" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+            <text x="50" y="295" font-size="13" fill="#1a1a1a" font-weight="600">Reply to Sarah's feedback</text>
+            <text x="50" y="315" font-size="11" fill="#718096">Design review • ~20 min</text>
+            
+            <circle cx="290" cy="470" r="28" fill="#2563eb"/>
+            <text x="290" y="477" font-size="20" text-anchor="middle" fill="white">🎤</text>
+          </svg>
+        </div>
+        <div class="feature-content">
+          <h3>Focus View: Daily Dashboard</h3>
+          <p>
+            The primary interface where users spend 95% of their time. Tasks organized not by deadline, but by cognitive effort required.
+          </p>
+          <ul>
+            <li><strong>Deep Work (1-2 hrs):</strong> High-focus tasks shown prominently in morning when energy peaks.</li>
+            <li><strong>Admin (30 min):</strong> Lower-friction work perfect for post-meeting recovery.</li>
+            <li><strong>Anytime (5-10 min):</strong> Discrete, low-focus tasks for quick breaks.</li>
+            <li><strong>Always-Present Mic:</strong> Capture button accessible at bottom without switching views.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-showcase reverse">
+        <div class="feature-visual">
+          <svg viewBox="0 0 360 550" preserveAspectRatio="xMidYMid meet">
+            <rect x="10" y="10" width="340" height="530" rx="32" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+            <text x="40" y="50" font-size="12" fill="#1a1a1a" font-weight="600">9:41</text>
+            
+            <text x="40" y="90" font-size="18" fill="#1a1a1a" font-weight="300">Mental Inbox</text>
+            <text x="40" y="110" font-size="11" fill="#718096">Dump raw thoughts here</text>
+
+            <rect x="35" y="140" width="290" height="40" rx="6" fill="#f0f9ff" stroke="#2563eb"/>
+            <text x="45" y="165" font-size="11" fill="#0c4a6e">💡 AI organizing into tasks in background</text>
+
+            <text x="45" y="215" font-size="13" fill="#1a1a1a" font-weight="500">📝 Ask David about timeline</text>
+            <text x="45" y="232" font-size="11" fill="#718096">10:32 AM today</text>
+            <line x1="35" y1="245" x2="325" y2="245" stroke="#e5e5e5"/>
+
+            <text x="45" y="275" font-size="13" fill="#1a1a1a" font-weight="500">🐛 Auth bug from standup</text>
+            <text x="45" y="292" font-size="11" fill="#718096">9:15 AM today</text>
+
+            <circle cx="290" cy="470" r="28" fill="#2563eb"/>
+            <text x="290" y="477" font-size="20" text-anchor="middle" fill="white">🎤</text>
+          </svg>
+        </div>
+        <div class="feature-content">
+          <h3>Mental Inbox: Zero-Friction Capture</h3>
+          <p>
+            A simple, distraction-free repository for raw thoughts. Tap mic, speak your thought, immediately return to work.
+          </p>
+          <ul>
+            <li><strong>Voice-Primary Input:</strong> Record thoughts in 2 seconds on the go.</li>
+            <li><strong>Text &amp; Paste Support:</strong> Copy-paste emails, Slack messages, or links.</li>
+            <li><strong>Zero Decisions:</strong> No folders, dates, or priorities needed upfront.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-showcase">
+        <div class="feature-visual">
+          <svg viewBox="0 0 360 550" preserveAspectRatio="xMidYMid meet">
+            <rect x="10" y="10" width="340" height="530" rx="32" fill="white" stroke="#e5e5e5" stroke-width="2"/>
+            <text x="40" y="50" font-size="12" fill="#1a1a1a" font-weight="600">9:41</text>
+            
+            <text x="40" y="90" font-size="18" fill="#1a1a1a" font-weight="300">All Tasks</text>
+            <text x="40" y="110" font-size="11" fill="#718096">Complete inventory</text>
+
+            <rect x="35" y="135" width="290" height="32" rx="6" fill="#f5f5f5"/>
+            <text x="45" y="156" font-size="11" fill="#888">🔍 Search all tasks...</text>
+
+            <text x="40" y="200" font-size="11" fill="#718096" font-weight="700">THIS WEEK (5 TASKS)</text>
+            <rect x="35" y="210" width="290" height="60" rx="8" fill="#ffffff" stroke="#e5e5e5"/>
+            <text x="50" y="235" font-size="13" fill="#1a1a1a" font-weight="500">✓ Design Q4 roadmap</text>
+            <text x="50" y="253" font-size="11" fill="#718096">📎 3 related: email, plan, notes</text>
+          </svg>
+        </div>
+        <div class="feature-content">
+          <h3>All Tasks: Complete Inventory</h3>
+          <p>
+            For when users want complete visibility. Fully organized and searchable, showing the complete inventory of extracted tasks.
+          </p>
+          <ul>
+            <li><strong>Organized by Timeframe:</strong> Clear views for this week, upcoming, and archive.</li>
+            <li><strong>Full Context Display:</strong> Shows related messages, events, and documents.</li>
+            <li><strong>Powerful Search:</strong> Find anything instantly across all ideas and context.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Capabilities -->
+    <section>
+      <h2>Core Capabilities</h2>
+      <div class="grid-3">
+        <div class="card solution">
+          <h4>🎤 Voice Capture</h4>
+          <p>Tap mic, record in 2 seconds, return to work immediately. Works anywhere with zero friction.</p>
+        </div>
+        <div class="card solution">
+          <h4>🧠 Auto Task Extraction</h4>
+          <p>"That auth bug from standup" → "Fix auth logout bug." &gt;90% accuracy extraction from messy speech.</p>
+        </div>
+        <div class="card solution">
+          <h4>⚡ Cognitive Effort Tagging</h4>
+          <p>AI estimates effort for each task, grouping items by mental capacity rather than arbitrary priority.</p>
+        </div>
+        <div class="card solution">
+          <h4>🎯 Opportunity Surfacing</h4>
+          <p>Surfaces relevant tasks when conditions align (free time, location, and calendar context).</p>
+        </div>
+        <div class="card solution">
+          <h4>🔗 Context Recovery</h4>
+          <p>Reopen a task: related emails, calendar events, decisions, and documents surface automatically.</p>
+        </div>
+        <div class="card solution">
+          <h4>📊 Stale Detection</h4>
+          <p>Automatically flags untouched items after 2 weeks to prevent mental debt build-up.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Competitive Advantage -->
+    <section>
+      <h2>Why We Win: Competitive Differentiation</h2>
+      <div class="diagram-block">
+        <div class="diagram-title">vs. Traditional Productivity Apps</div>
+        <svg viewBox="0 0 1200 320" preserveAspectRatio="xMidYMid meet">
+          <!-- Row 1 -->
+          <g>
+            <rect x="20" y="20" width="300" height="80" fill="#f7fafc" stroke="#e5e5e5"/>
+            <text x="170" y="65" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">Capture Friction</text>
+
+            <rect x="340" y="20" width="410" height="80" fill="#fef2f2" stroke="#e5e5e5"/>
+            <text x="360" y="50" font-size="12" fill="#7f1d1d" font-weight="700">Traditional:</text>
+            <text x="360" y="70" font-size="13" fill="#7f1d1d">Decide folder, priority, date upfront</text>
+
+            <rect x="770" y="20" width="410" height="80" fill="#f0fdf4" stroke="#e5e5e5"/>
+            <text x="790" y="50" font-size="12" fill="#15803d" font-weight="700">Cognitive Offload:</text>
+            <text x="790" y="70" font-size="13" fill="#15803d">✓ Zero decisions, return to work instantly</text>
+          </g>
+
+          <!-- Row 2 -->
+          <g>
+            <rect x="20" y="120" width="300" height="80" fill="#f7fafc" stroke="#e5e5e5"/>
+            <text x="170" y="165" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">Organization</text>
+
+            <rect x="340" y="120" width="410" height="80" fill="#fef2f2" stroke="#e5e5e5"/>
+            <text x="360" y="150" font-size="12" fill="#7f1d1d" font-weight="700">Traditional:</text>
+            <text x="360" y="170" font-size="13" fill="#7f1d1d">Manual sorting &amp; ongoing maintenance burden</text>
+
+            <rect x="770" y="120" width="410" height="80" fill="#f0fdf4" stroke="#e5e5e5"/>
+            <text x="790" y="150" font-size="12" fill="#15803d" font-weight="700">Cognitive Offload:</text>
+            <text x="790" y="170" font-size="13" fill="#15803d">✓ Automatic organization by AI</text>
+          </g>
+
+          <!-- Row 3 -->
+          <g>
+            <rect x="20" y="220" width="300" height="80" fill="#f7fafc" stroke="#e5e5e5"/>
+            <text x="170" y="265" font-size="14" font-weight="700" text-anchor="middle" fill="#1a1a1a">Mental State</text>
+
+            <rect x="340" y="220" width="410" height="80" fill="#fef2f2" stroke="#e5e5e5"/>
+            <text x="360" y="250" font-size="12" fill="#7f1d1d" font-weight="700">Traditional:</text>
+            <text x="360" y="270" font-size="13" fill="#7f1d1d">Same static interface all day</text>
+
+            <rect x="770" y="220" width="410" height="80" fill="#f0fdf4" stroke="#e5e5e5"/>
+            <text x="790" y="250" font-size="12" fill="#15803d" font-weight="700">Cognitive Offload:</text>
+            <text x="790" y="270" font-size="13" fill="#15803d">✓ Adapts view dynamically to user energy level</text>
+          </g>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section>
+      <h2>Implementation Roadmap</h2>
+      <p>
+        The MVP focuses on proving core value: zero-friction capture + automatic organization + built trust.
+      </p>
+
+      <div class="roadmap-container">
+        <div class="roadmap-phase">
+          <div class="phase-header">
+            <div class="phase-number">1</div>
+            <div class="phase-info">
+              <div class="phase-title">MVP: Capture &amp; Organization</div>
+              <div class="phase-duration">Weeks 1-8</div>
+            </div>
+          </div>
+          <div class="phase-items">
+            <div class="phase-item">
+              <div class="phase-item-name">Core Voice/Text Input</div>
+              <div class="phase-item-description">Zero-friction capture system with encrypted raw thoughts storage.</div>
+            </div>
+            <div class="phase-item">
+              <div class="phase-item-name">Task Extraction Engine</div>
+              <div class="phase-item-description">AI task extraction targeting &gt;85% accuracy before beta.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="roadmap-phase">
+          <div class="phase-header">
+            <div class="phase-number">2</div>
+            <div class="phase-info">
+              <div class="phase-title">Intelligence &amp; Personalization</div>
+              <div class="phase-duration">Weeks 9-16</div>
+            </div>
+          </div>
+          <div class="phase-items">
+            <div class="phase-item">
+              <div class="phase-item-name">Dynamic Brain States</div>
+              <div class="phase-item-description">Adapt interface based on meeting density and time of day.</div>
+            </div>
+            <div class="phase-item">
+              <div class="phase-item-name">Automatic Context Recovery</div>
+              <div class="phase-item-description">Link related emails, events, and documents automatically.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Metrics -->
+    <section>
+      <h2>How We Measure Success</h2>
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-value">&lt;3s</div>
+          <div class="metric-label">Capture Time</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">&gt;85%</div>
+          <div class="metric-label">Extraction Accuracy</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">&gt;60%</div>
+          <div class="metric-label">Task Completion</div>
+        </div>
+      </div>
+
+      <div class="two-column">
+        <div>
+          <h3>Engagement Metrics</h3>
+          <p><strong>Daily Active Users (40%+ DAU):</strong> Evaluates if the system is essential to daily workflow.</p>
+          <p><strong>Capture Frequency:</strong> 5-10 captures/day indicates natural integration into thought habits.</p>
+        </div>
+        <div>
+          <h3>Quality Metrics</h3>
+          <p><strong>Organization Trust (85%+):</strong> High agreement that AI organizes items intuitively.</p>
+          <p><strong>Context Relevance:</strong> Tracks clicks on automatically surfaced context items.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>Cognitive Offload — 2026</div>
+      <a href="#" class="back-to-top">↑ Back to top</a>
+    </footer>
+
+  </div>
+</body>
+</html>
